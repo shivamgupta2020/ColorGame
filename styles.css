@@ -1,0 +1,170 @@
+.Heading {
+    display: flex;
+    background-color: #FFBD0B;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    height: 220px;
+    color: #ffffff;
+    /* background-image: url('https://wallpaperaccess.com/full/713148.jpg'); */
+}
+#message{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.options {
+    display: flex;
+    height: 40px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+html, body {
+    margin: 0;
+    margin-top: 0;
+    background-color: #292927;
+}
+h1 {
+    margin: 0;
+}
+#new-game {
+    color: #BA4B49;
+    font-weight: bolder;
+    background-color: white;
+    border: none;
+    font-size: 17px;
+}
+#new-game:hover {
+    color: #ffffff;
+    background-color: #BA4B49;
+}
+.events{
+
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+#next-round{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px
+}
+.hardcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    max-height: 400px;
+
+}
+.hardcontainer :hover {
+    border-radius: 40px;
+    transform: scale(0.88);
+}
+/* adding font style to message */
+#message{
+    font-family: 'Bangers', cursive;
+    font-weight: lighter;
+}
+.h1{
+    font-family: 'Press Start 2P', cursive;
+}
+/* adding font style to heading */
+#color-code{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+}
+.grid {
+    background-color: red;
+    width: 158px;
+    height: 158px;
+    margin: 14.66px;
+    padding: 9px;
+    border-radius: 40px;
+}
+/* navigation  bar */
+#navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('https://wallpaperaccess.com/full/713148.jpg');
+}
+#navigation ul{
+    display: flex;
+}
+ul li{
+    color: white;
+    list-style: none;
+}
+li a{
+    display: block;
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+}
+#navigation ul li a:hover {
+    border-radius: 20px;
+    background-color:white;
+    color: #292927;
+}
+/* Dropdown Button */
+.dropbtn{
+    background-color: white;
+    color: #BA4B49;
+    font-size: 16px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    font-weight: bolder;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+}
+.dropbtn:hover {
+    background-color: #BA4B49;
+    color: #ffffff;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+/* trying to add responsiveness to the website */
+@media (max-width:320px){
+    #color-code{
+        font-size: 15px;
+    }
+}
