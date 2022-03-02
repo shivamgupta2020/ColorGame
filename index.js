@@ -1,4 +1,8 @@
+let maincolor = getRandomColor();
+var score = 0;
+var extra=0;
 var boxCount;
+// Adding Emojis
 function getRandomEmoji1() {
     let emoticons1 = ['0x1F917', '0x1F911', '0x1F3C6', '0x1F389', '0x1F37B', '0x1F60E', '0x1F44F']
     num1 = Math.floor(Math.random() * 7)
@@ -11,26 +15,24 @@ function getRandomEmoji2() {
     emoji2 = String.fromCodePoint(emoticons2[num2]);
     return emoji2;
 }
-let maincolor = getRandomColor();
-var score = 0;
-var extra=0;
+// Algo to Generate a Random Color
 function getRandomColor() {
     color = "rgb(" + Math.floor(Math.random() * 256) + ', ' + Math.floor(Math.random() * 256) + ', ' + Math.floor(Math.random() * 256) + ')';
     return color;
 }
+// Setting the default to Easy Mode 
 easy();
-
+// Configuring the New Game Function
 function newGame()
 {
     document.getElementById("score").innerHTML = "Score: 0" ;
     score = 0;
     setRandomColor();
     document.getElementById("message").innerHTML = "";
-    
-
 }
+// Giving colors to cards
 setRandomColor();
-
+// Setting up differwent difficulty modes
 function easy() {
     boxCount = 3;
     setRandomColor();
@@ -47,6 +49,7 @@ function hard() {
     }
     newGame();
 }
+// Writing code for setting up color of cards
 function setRandomColor() {
     var boxes = document.querySelectorAll(".grid")
     maincolor = getRandomColor();
@@ -58,9 +61,8 @@ function setRandomColor() {
     boxes[Math.floor(Math.random() * (boxCount))].style.backgroundColor = maincolor;
     extra = 0;
     document.getElementById("message").innerHTML = "";
-
-
 }
+// logic for dropdown functions
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -79,6 +81,7 @@ window.onclick = function (event) {
         }
     }
 }
+// Whether the selected color matches the rgb value or not and return message
 function select(clicked_id) {
 
     myDivObj = document.getElementById(clicked_id);
@@ -106,7 +109,7 @@ function select(clicked_id) {
         
     }
 }
-
+// Adding score feature to keep track of progress
 function updateScore()
 {
     if (!extra) {
@@ -116,6 +119,7 @@ function updateScore()
     }
 
 }
+// Negative Score for wrong Guess
 function reduceScore()
 {
     score -= 0.75;  
