@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 html, body {
     margin: 0;
     margin-top: 0;
@@ -32,8 +33,11 @@ h1 {
     color: #BA4B49;
     font-weight: bolder;
     background-color: white;
-    border: none;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
     font-size: 17px;
+    height: 30px;
 }
 #new-game:hover {
     color: #ffffff;
@@ -48,10 +52,17 @@ h1 {
     
 }
 #next-round{
-    color: white;
+    color: #cad5f5;
     display: flex;
     justify-content: center;
-    padding-top: 10px
+    padding-top: 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    width: 15vw;
+    margin: auto;
+    border: solid 1px #cad5f5;
+    border-radius: 15px;
+    text-align: center;
 }
 /* styling the grid */
 .hardcontainer {
@@ -122,7 +133,8 @@ li a{
     color: #BA4B49;
     font-size: 16px;
     padding: 0px;
-    border: none;
+    border: solid 1px #BA4B49;
+    border-radius: 5px;
     cursor: pointer;
     height: 30px;
     font-weight: bolder;
@@ -163,4 +175,9 @@ li a{
 /* Show the dropdown menu*/
 .show {
     display: block;
+}
+#score{
+    font-family: 'Acme', sans-serif; 
+    font-size: 3rem;
+    color: #cad5f5;
 }

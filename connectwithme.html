@@ -23,6 +23,13 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
         <style>
             * {
                 margin: 0px;
@@ -30,15 +37,16 @@
                 box-sizing: border-box;
                 text-align: center;
                 letter-spacing: 1px;
-                font-family: 'DM Sans', sans-serif;
+                background-color: #0a192f;
             }
 
             article img {
-                height: 150px;
-                width: 150px;
-                border-radius: 50%;
+                height: 25rem;
+                width: 25rem;
+                border-radius: 2%;
                 margin-top: 18px;
                 object-fit: cover;
+                margin-bottom: 30px;
             }
 
             article h1 {
@@ -46,61 +54,72 @@
                 margin-bottom: 20px;
                 font-size: 80px;
                 font-family: 'DM Sans', sans-serif;
-                color: black;
+
                 margin-left: 230px;
                 margin-right: 230px;
             }
 
-            hr {
-                border-top: 1px dotted rgb(0, 0, 0);
-            }
+
 
             .phone {
                 width: 69px;
                 height: 64px;
-                margin-right: 234px;
+
             }
+
             .gmail {
                 width: 80px;
                 height: 60px;
-                margin-left: 234px;
+
             }
 
             .tooltip {
+                display: flex;
+                justify-content: center;
                 position: relative;
                 display: inline-block;
+                align-self: center;
             }
+
             .tooltip .tooltiptext {
+                position: relative;
                 visibility: hidden;
-                width:fit-content;
+                width: fit-content;
                 background-color: black;
                 color: #fff;
                 text-align: center;
-                padding: 5px 0;
                 border-radius: 6px;
-                position: absolute;
                 z-index: 1;
-                top: 100%;
-               left: 50%;
-              margin-left: -60px;
+                top: 2rem;
             }
+
             .tooltip:hover .tooltiptext {
                 visibility: visible;
             }
-            .container{
+
+            .container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
             }
-            h2{
-                font-family: 'DM Sans', sans-serif;
-                margin-bottom: 41px;
+
+            h2 {
+                font-family: 'Philosopher', sans-serif;
+                margin-top: 41px;
+                color: #cad5f5;
             }
-            .name{
+
+            h3 {
+                font-family: 'Philosopher', sans-serif;
+                color: #cad5f5;
+            }
+
+            .name {
                 display: flex;
                 padding: 23px;
                 font-size: 23px;
             }
-            #right{
+
+            #right {
                 display: flex;
                 text-align: right;
                 margin-left: 902px;
@@ -111,70 +130,103 @@
                 font-size: 15px;
                 padding: 10px;
             }
-            #right:hover{
+
+            #right:hover {
                 color: rgb(255, 255, 255);
                 background-color: black;
                 border-radius: 32px;
             }
-            #navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#navigation ul{
-    display: flex;
-}
-ul li{
-    color: rgb(0, 0, 0);
-    list-style: none;
-}
-li a{
-    display: block;
-    color: rgb(0, 0, 0);
-    padding: 0px 15px;
-    text-decoration: none;
-}
-#navigation ul li a:hover {
-    border-radius: 20px;
-    background-color:rgb(0, 0, 0);
-    color: #fdfdfd;
-}
-#myname{
-    font-size: 25px;
-    padding: 12px;
-}
+
+            #navigation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #navigation ul {
+                display: flex;
+            }
+
+            ul li {
+                color: #54f0b9;
+                list-style: none;
+                font-size: 6em;
+            }
+
+            li a {
+                display: block;
+                color: #54f0b9;
+                padding: 15px 32px;
+                text-decoration: none;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 36px;
+                font-size: 16px;
+            }
+
+            #navigation ul li a:hover {
+                border-radius: 20px;
+                background-color: #10293b;
+                color: #54f0b9;
+                border-radius: 36px;
+                font-weight: bolder;
+            }
+
+            #myname {
+                font-size: 3rem;
+                padding: 12px;
+                font-family: 'Calligraffitti', cursive;
+            }
+
+            h1 {
+                font-weight: 100;
+
+            }
+
+            p {
+                font-family: 'Philosopher', sans-serif;
+                font-size: 3rem;
+                color: #8893b1;
+            }
         </style>
     </head>
 
     <body>
         <nav id="navigation">
             <ul>
-                <li class="nav" id="myname">Devansh Choudhary</li>
+                <li class="nav" id="myname">
+                    <h1>Shivam Gupta</h1>
+                </li>
             </ul>
             <ul>
-                <li class="nav"><a href="./aboutme.html">About Me</a></li>
+                <li class="nav"><a href="./aboutme.html" style="margin-right: 10px;">About Me</a></li>
             </ul>
         </nav>
+
         <article>
-            <img src="./images/devansh3.jpeg" alt="Error Loading Image">
-            <h1>Hello! If we are meeting then coffee is on me.</h1>
+            <img src="./images/shivam.png" alt="Error Loading Image">
+            <p>"I was in love with spiderman, until i found out that coding is a superpower too."</p>
+            <h2>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL</h2><br>
+
         </article>
-        <hr>
+
         <br>
         <div>
-            <h2> <--Feel Free to reach me out on--></h2>
+            <h2>
+                <--Feel Free to reach me out on-->
+            </h2>
         </div>
+        <br>
         <div class="container">
-
-            <div class="tooltip"><img class="gmail"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
-                alt="">
-                <span class="tooltiptext">devansh.choudhary.che21@itbhu.ac.in</span>
+            <div class="tooltip">
+                <div class="icons"><img class="gmail"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                        alt=""></div>
+                <span class="tooltiptext">shivam.gupta.ece21@itbhu.ac.in</span>
             </div>
-            <div class="tooltip"><img class="phone"
-                src="https://w7.pngwing.com/pngs/441/336/png-transparent-call-log-logo-iphone-4-iphone-3g-iphone-7-telephone-icon-phone-hd-electronics-text-telephone-call.png"
-                alt="">
-                <span class="tooltiptext">8318638999</span>
+            <div class="tooltip">
+                <div class="icons"><img class="phone" src="./images/whatapp.png" alt=""></div>
+                <span class="tooltiptext">9424411046</span>
             </div>
         </div>
     </body>

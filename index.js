@@ -1,7 +1,8 @@
 let maincolor = getRandomColor();
 var score = 0;
-var extra=0;
+var extra = 0;
 var boxCount;
+
 // Adding Emojis
 function getRandomEmoji1() {
     let emoticons1 = ['0x1F917', '0x1F911', '0x1F3C6', '0x1F389', '0x1F37B', '0x1F60E', '0x1F44F']
@@ -23,16 +24,16 @@ function getRandomColor() {
 // Setting the default to Easy Mode 
 easy();
 // Configuring the New Game Function
-function newGame()
-{
-    document.getElementById("score").innerHTML = "Score: 0" ;
+function newGame() {
+    document.getElementById("score").innerHTML = "Score: 0";
     score = 0;
     setRandomColor();
     document.getElementById("message").innerHTML = "";
 }
 // Giving colors to cards
 setRandomColor();
-// Setting up differwent difficulty modes
+
+// Setting up different difficulty modes
 function easy() {
     boxCount = 3;
     setRandomColor();
@@ -102,16 +103,14 @@ function select(clicked_id) {
         document.getElementById(clicked_id).style.backgroundColor = "#292927";
         message.style.color = "red";
     }
-    if(score<0)
-    {
+    if (score < 0) {
         alert("You lost the game. ");
         newGame();
-        
+
     }
 }
 // Adding score feature to keep track of progress
-function updateScore()
-{
+function updateScore() {
     if (!extra) {
         score = score + 1;
         document.getElementById("score").innerHTML = "Score: " + score;
@@ -120,9 +119,8 @@ function updateScore()
 
 }
 // Negative Score for wrong Guess
-function reduceScore()
-{
-    score -= 0.75;  
+function reduceScore() {
+    score -= 0.75;
     document.getElementById("score").innerHTML = "Score: " + score;
 }
 
