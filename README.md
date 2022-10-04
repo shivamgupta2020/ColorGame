@@ -1,8 +1,11 @@
 
 # Color Game
 
-# A demo of the game is as follows -->
-![alt text](https://github.com/Devansh-1007/hackOverFlow_assignment1/blob/master/ezgif.com-gif-maker.gif)
+> A game of guessing color code.
+
+A working example is hosted at: [Color Game](https://hack-over-flow-assignment1.vercel.app/)
+
+A Color Game is a basic game on guessing the color code of given color tile. This game is uses HTML, CSS and JS.
 
 ---
 # ENJOY THE GAME
