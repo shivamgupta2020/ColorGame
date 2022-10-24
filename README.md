@@ -11,4 +11,7 @@ A Color Game is a basic game on guessing the color code of given color tile. Thi
 ---
 # ENJOY THE GAME
 #PLAY WITH YOUR FINGERS
+
 This game has 2 levels .One is the easy level and other the hard one. Try this !!
+=======
+
