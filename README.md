@@ -13,3 +13,4 @@ A Color Game is a basic game on guessing the color code of given color tile. Thi
 #PLAY WITH YOUR FINGERS
 This game has both easy mode as well as hard mode.. Try this !!
 hue hue hue
+hula hula hule o
